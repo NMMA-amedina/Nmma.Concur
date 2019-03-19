@@ -5,6 +5,7 @@ using System.Net;
 using System.Text;
 using System.Xml;
 
+//generic OAuth2 authenticator
 namespace NMMA.OAuth2
 {
     public class OAuth2Wrapper
