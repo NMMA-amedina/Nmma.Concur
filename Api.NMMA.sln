@@ -1,0 +1,141 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Nmma", "ProjectSource\Api.Nmma\Api.Nmma.csproj", "{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nmma.Business", "..\..\..\NMMA.Business\Trunk\Source\ProjectSource\Nmma.Business\Nmma.Business.csproj", "{36545504-A3E9-480F-8DAF-77825DE4CE9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nmma.Core", "..\..\..\NMMA.Core\Trunk\Source\ProjectSource\Nmma.Core\Nmma.Core.csproj", "{62F19B88-78E3-42EB-A0BE-3843B0B4A330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nmma.Data.BackOffice", "..\..\..\NMMA.Data.BackOffice\Trunk\Source\ProjectSource\Nmma.DataBackOffice\Nmma.Data.BackOffice.csproj", "{6D02C191-B11A-4402-AFCB-91C707B71135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nmma.Repositories", "..\..\..\NMMA.Business\Trunk\Source\ProjectSource\Nmma.Repositories\Nmma.Repositories.csproj", "{A5285968-E32F-44C1-BF9F-FB0BA1467317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nmma.Domain", "..\..\..\NMMA.Domain\Trunk\Source\ProjectSource\Nmma.Domain\Nmma.Domain.csproj", "{4413DD45-78D7-4966-AB9E-50C904B3A6E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nmma.Web.Core", "..\..\..\NMMA.Web.Core\Trunk\Source\ProjectSource\Nmma.Web.Core\Nmma.Web.Core.csproj", "{99CA178A-7584-4528-92BC-023B0CFB622E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nmma", "..\..\..\NMMA.Business.Mgmt\Trunk\Source\ProjectSource\Nmma\Nmma.csproj", "{7EB48659-0C17-44DD-86CF-595BA33B1869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "..\..\..\NMMA.Business.Framework-Legacy\Trunk\Source\ProjectSource\Framework\Framework.csproj", "{B5B9E242-E96D-4B82-B3F7-291DA4833413}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		uat|Any CPU = uat|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}.Staging|Any CPU.ActiveCfg = Release|Any CPU
+		{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}.Staging|Any CPU.Build.0 = Release|Any CPU
+		{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}.uat|Any CPU.ActiveCfg = Release|Any CPU
+		{89BCE063-4C7A-44BE-81AE-915B2F0B59F4}.uat|Any CPU.Build.0 = Release|Any CPU
+		{36545504-A3E9-480F-8DAF-77825DE4CE9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36545504-A3E9-480F-8DAF-77825DE4CE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36545504-A3E9-480F-8DAF-77825DE4CE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36545504-A3E9-480F-8DAF-77825DE4CE9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36545504-A3E9-480F-8DAF-77825DE4CE9A}.Staging|Any CPU.ActiveCfg = Release|Any CPU
+		{36545504-A3E9-480F-8DAF-77825DE4CE9A}.Staging|Any CPU.Build.0 = Release|Any CPU
+		{36545504-A3E9-480F-8DAF-77825DE4CE9A}.uat|Any CPU.ActiveCfg = Release|Any CPU
+		{36545504-A3E9-480F-8DAF-77825DE4CE9A}.uat|Any CPU.Build.0 = Release|Any CPU
+		{62F19B88-78E3-42EB-A0BE-3843B0B4A330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F19B88-78E3-42EB-A0BE-3843B0B4A330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F19B88-78E3-42EB-A0BE-3843B0B4A330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F19B88-78E3-42EB-A0BE-3843B0B4A330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F19B88-78E3-42EB-A0BE-3843B0B4A330}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{62F19B88-78E3-42EB-A0BE-3843B0B4A330}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{62F19B88-78E3-42EB-A0BE-3843B0B4A330}.uat|Any CPU.ActiveCfg = Staging|Any CPU
+		{62F19B88-78E3-42EB-A0BE-3843B0B4A330}.uat|Any CPU.Build.0 = Staging|Any CPU
+		{6D02C191-B11A-4402-AFCB-91C707B71135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D02C191-B11A-4402-AFCB-91C707B71135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D02C191-B11A-4402-AFCB-91C707B71135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D02C191-B11A-4402-AFCB-91C707B71135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D02C191-B11A-4402-AFCB-91C707B71135}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{6D02C191-B11A-4402-AFCB-91C707B71135}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{6D02C191-B11A-4402-AFCB-91C707B71135}.uat|Any CPU.ActiveCfg = Staging|Any CPU
+		{6D02C191-B11A-4402-AFCB-91C707B71135}.uat|Any CPU.Build.0 = Staging|Any CPU
+		{A5285968-E32F-44C1-BF9F-FB0BA1467317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5285968-E32F-44C1-BF9F-FB0BA1467317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5285968-E32F-44C1-BF9F-FB0BA1467317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5285968-E32F-44C1-BF9F-FB0BA1467317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5285968-E32F-44C1-BF9F-FB0BA1467317}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{A5285968-E32F-44C1-BF9F-FB0BA1467317}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{A5285968-E32F-44C1-BF9F-FB0BA1467317}.uat|Any CPU.ActiveCfg = Staging|Any CPU
+		{A5285968-E32F-44C1-BF9F-FB0BA1467317}.uat|Any CPU.Build.0 = Staging|Any CPU
+		{4413DD45-78D7-4966-AB9E-50C904B3A6E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4413DD45-78D7-4966-AB9E-50C904B3A6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4413DD45-78D7-4966-AB9E-50C904B3A6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4413DD45-78D7-4966-AB9E-50C904B3A6E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4413DD45-78D7-4966-AB9E-50C904B3A6E9}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{4413DD45-78D7-4966-AB9E-50C904B3A6E9}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{4413DD45-78D7-4966-AB9E-50C904B3A6E9}.uat|Any CPU.ActiveCfg = Staging|Any CPU
+		{4413DD45-78D7-4966-AB9E-50C904B3A6E9}.uat|Any CPU.Build.0 = Staging|Any CPU
+		{99CA178A-7584-4528-92BC-023B0CFB622E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CA178A-7584-4528-92BC-023B0CFB622E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CA178A-7584-4528-92BC-023B0CFB622E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CA178A-7584-4528-92BC-023B0CFB622E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99CA178A-7584-4528-92BC-023B0CFB622E}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{99CA178A-7584-4528-92BC-023B0CFB622E}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{99CA178A-7584-4528-92BC-023B0CFB622E}.uat|Any CPU.ActiveCfg = Staging|Any CPU
+		{99CA178A-7584-4528-92BC-023B0CFB622E}.uat|Any CPU.Build.0 = Staging|Any CPU
+		{7EB48659-0C17-44DD-86CF-595BA33B1869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB48659-0C17-44DD-86CF-595BA33B1869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB48659-0C17-44DD-86CF-595BA33B1869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB48659-0C17-44DD-86CF-595BA33B1869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB48659-0C17-44DD-86CF-595BA33B1869}.Staging|Any CPU.ActiveCfg = uat|Any CPU
+		{7EB48659-0C17-44DD-86CF-595BA33B1869}.Staging|Any CPU.Build.0 = uat|Any CPU
+		{7EB48659-0C17-44DD-86CF-595BA33B1869}.uat|Any CPU.ActiveCfg = uat|Any CPU
+		{7EB48659-0C17-44DD-86CF-595BA33B1869}.uat|Any CPU.Build.0 = uat|Any CPU
+		{B5B9E242-E96D-4B82-B3F7-291DA4833413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B9E242-E96D-4B82-B3F7-291DA4833413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B9E242-E96D-4B82-B3F7-291DA4833413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B9E242-E96D-4B82-B3F7-291DA4833413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B9E242-E96D-4B82-B3F7-291DA4833413}.Staging|Any CPU.ActiveCfg = uat|Any CPU
+		{B5B9E242-E96D-4B82-B3F7-291DA4833413}.Staging|Any CPU.Build.0 = uat|Any CPU
+		{B5B9E242-E96D-4B82-B3F7-291DA4833413}.uat|Any CPU.ActiveCfg = uat|Any CPU
+		{B5B9E242-E96D-4B82-B3F7-291DA4833413}.uat|Any CPU.Build.0 = uat|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dev2.web.nmma.org:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ProjectSource\\Api.Nmma\\Api.Nmma.csproj
+		SccProjectName1 = ProjectSource/Api.Nmma
+		SccLocalPath1 = ProjectSource\\Api.Nmma
+		SccProjectUniqueName2 = ..\\..\\..\\NMMA.Business\\Trunk\\Source\\ProjectSource\\Nmma.Business\\Nmma.Business.csproj
+		SccProjectName2 = ../../../NMMA.Business/Trunk/Source/ProjectSource/Nmma.Business
+		SccLocalPath2 = ..\\..\\..\\NMMA.Business\\Trunk\\Source\\ProjectSource\\Nmma.Business
+		SccProjectUniqueName3 = ..\\..\\..\\NMMA.Core\\Trunk\\Source\\ProjectSource\\Nmma.Core\\Nmma.Core.csproj
+		SccProjectName3 = ../../../NMMA.Core/Trunk/Source/ProjectSource/Nmma.Core
+		SccLocalPath3 = ..\\..\\..\\NMMA.Core\\Trunk\\Source\\ProjectSource\\Nmma.Core
+		SccProjectUniqueName4 = ..\\..\\..\\NMMA.Data.BackOffice\\Trunk\\Source\\ProjectSource\\Nmma.DataBackOffice\\Nmma.Data.BackOffice.csproj
+		SccProjectName4 = ../../../NMMA.Data.BackOffice/Trunk/Source/ProjectSource/Nmma.DataBackOffice
+		SccLocalPath4 = ..\\..\\..\\NMMA.Data.BackOffice\\Trunk\\Source\\ProjectSource\\Nmma.DataBackOffice
+		SccProjectUniqueName5 = ..\\..\\..\\NMMA.Business\\Trunk\\Source\\ProjectSource\\Nmma.Repositories\\Nmma.Repositories.csproj
+		SccProjectName5 = ../../../NMMA.Business/Trunk/Source/ProjectSource/Nmma.Repositories
+		SccLocalPath5 = ..\\..\\..\\NMMA.Business\\Trunk\\Source\\ProjectSource\\Nmma.Repositories
+		SccProjectUniqueName6 = ..\\..\\..\\NMMA.Domain\\Trunk\\Source\\ProjectSource\\Nmma.Domain\\Nmma.Domain.csproj
+		SccProjectName6 = ../../../NMMA.Domain/Trunk/Source/ProjectSource/Nmma.Domain
+		SccLocalPath6 = ..\\..\\..\\NMMA.Domain\\Trunk\\Source\\ProjectSource\\Nmma.Domain
+		SccProjectUniqueName7 = ..\\..\\..\\NMMA.Web.Core\\Trunk\\Source\\ProjectSource\\Nmma.Web.Core\\Nmma.Web.Core.csproj
+		SccProjectName7 = ../../../NMMA.Web.Core/Trunk/Source/ProjectSource/Nmma.Web.Core
+		SccLocalPath7 = ..\\..\\..\\NMMA.Web.Core\\Trunk\\Source\\ProjectSource\\Nmma.Web.Core
+		SccProjectUniqueName8 = ..\\..\\..\\NMMA.Business.Mgmt\\Trunk\\Source\\ProjectSource\\Nmma\\Nmma.csproj
+		SccProjectName8 = ../../../NMMA.Business.Mgmt/Trunk/Source/ProjectSource/Nmma
+		SccLocalPath8 = ..\\..\\..\\NMMA.Business.Mgmt\\Trunk\\Source\\ProjectSource\\Nmma
+		SccProjectUniqueName9 = ..\\..\\..\\NMMA.Business.Framework-Legacy\\Trunk\\Source\\ProjectSource\\Framework\\Framework.csproj
+		SccProjectName9 = ../../../NMMA.Business.Framework-Legacy/Trunk/Source/ProjectSource/Framework
+		SccLocalPath9 = ..\\..\\..\\NMMA.Business.Framework-Legacy\\Trunk\\Source\\ProjectSource\\Framework
+	EndGlobalSection
+EndGlobal

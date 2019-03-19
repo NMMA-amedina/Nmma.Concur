@@ -1,0 +1,1071 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.Nmma</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Nmma.BundleConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)">
+            <summary>
+            
+            </summary>
+            <param name="bundles"></param>
+            <remarks>For more information on Bundling, visit http:\/\/go.microsoft.com/fwlink/?LinkId=254725</remarks>
+        </member>
+        <member name="T:Api.Nmma.ErrorPolicyConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.ErrorPolicyConfig.RegisterPolicy(System.Web.Http.HttpConfiguration)">
+            <summary>
+            	Configures whether error details, such as exception messages and stack traces, should be included in error messages.
+            	This configuration uses the customErrors element from the web.config.
+            </summary>
+            <param name="config"></param>
+            <remarks>
+            	IncludeErrorDetailPolicy:
+            		Default: Use the default behavior for the host environment. For ASP.NET hosting, use the value from the customErrors element in the Web.config file. For self-hosting, use the value LocalOnly.
+            		LocalOnly: Only include error details when responding to a local request.
+            		Always: Always include error details.
+            		Never:	Never include error details. 
+            		
+            	customErrors mode:
+            		On: Specifies that custom errors are enabled. If no defaultRedirect attribute is specified, users see a generic error. The custom errors are shown to the remote clients and to the local host.
+            		Off: Specifies that custom errors are disabled. The detailed ASP.NET errors are shown to the remote clients and to the local host.
+            		RemoteOnly: Specifies that custom errors are shown only to the remote clients, and that ASP.NET errors are shown to the local host. This is the default value.
+            </remarks>
+        </member>
+        <member name="T:Api.Nmma.FilterConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)">
+            <summary>
+            
+            </summary>
+            <param name="filters"></param>
+        </member>
+        <member name="T:Api.Nmma.IoCConfig">
+            <summary>
+            Configures the IoC/DI container.
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.IoCConfig.RegisterContainer(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Registers the IoC/DI container.
+            </summary>
+            <param name="config"></param>
+            <remarks>IoC/DI container used is Autofac. http://autofac.org</remarks>
+        </member>
+        <member name="T:Api.Nmma.TracingConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.TracingConfig.RegisterTracing(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:Api.Nmma.Configuration.Mode">
+            <summary>
+            	The different modes supported for the Web API configuration sections.
+            </summary>
+        </member>
+        <member name="F:Api.Nmma.Configuration.Mode.LocalOnly">
+            <summary>
+            	Only local requests are to be monitored.
+            </summary>
+        </member>
+        <member name="F:Api.Nmma.Configuration.Mode.Off">
+            <summary>
+            	No monitoring.
+            </summary>
+        </member>
+        <member name="F:Api.Nmma.Configuration.Mode.On">
+            <summary>
+            	Always monitored.
+            </summary>
+        </member>
+        <member name="F:Api.Nmma.Configuration.Mode.RemoteOnly">
+            <summary>
+            	Only remote requests are to be monitored.
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Configuration.ModeExtensions">
+            <summary>
+            	 Extensions methods for <see cref="T:Api.Nmma.Configuration.Mode"/>.
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Configuration.ModeExtensions.Allows(Api.Nmma.Configuration.Mode,System.Web.HttpRequest)">
+            <summary>
+            
+            </summary>
+            <param name="mode"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Nmma.Configuration.ModeExtensions.Allows(Api.Nmma.Configuration.Mode,System.Net.Http.HttpRequestMessage)">
+            <summary>
+            
+            </summary>
+            <param name="mode"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Nmma.Configuration.ClientAuthenticationSection">
+            <summary>
+            	Contains the client authentication section.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.ClientAuthenticationSection.CheckDomain">
+            <summary>
+            	Gets or sets whether the client doamin should be verified.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.ClientAuthenticationSection.CheckIP">
+            <summary>
+            	Gets or sets whether the client IP should be verified.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.ClientAuthenticationSection.Mode">
+            <summary>
+            	Gets or sets the mode indicating how the secure web page settings handled.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.ClientAuthenticationSection.Root">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Configuration.ClientAuthenticationSection.#ctor">
+            <summary>
+            	Default constructor.
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Configuration.CustomReasonPhraseSection">
+            <summary>
+            	Contains the reason phrase section.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.CustomReasonPhraseSection.Mode">
+            <summary>
+            	Gets or sets the mode indicating how the reason phrase is handled.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.CustomReasonPhraseSection.Root">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Configuration.CustomReasonPhraseSection.#ctor">
+            <summary>
+            	Default constructor.
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Configuration.GlobalWebApiConfiguration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.GlobalWebApiConfiguration.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Configuration.TracingSection">
+            <summary>
+            	Contains the tracing section.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.TracingSection.Levels">
+            <summary>
+            	Tracing levels to be taken into account.Tracing levels: Level, Debug, Error, Fatal, Info, Off, Warn.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.TracingSection.Mode">
+            <summary>
+            	Gets or sets the mode indicating how the tracing settings are handled.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.TracingSection.Root">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Configuration.TracingSection.#ctor">
+            <summary>
+            	Default constructor.
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Configuration.Tracing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.Tracing.Levels">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.Tracing.Mode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Configuration.ClientAuthentication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.ClientAuthentication.CheckDomain">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.ClientAuthentication.CheckIP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.ClientAuthentication.Mode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Configuration.WebApiConfiguration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.WebApiConfiguration.ClientAuthentication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.WebApiConfiguration.CustomReasonPhrase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Configuration.WebApiConfiguration.Tracing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Configuration.WebApiConfiguration.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Configuration.WebApiConfiguration.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Configuration.WebApiConfiguration.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Api.Nmma.Controllers.BaseApiController">
+            <summary>
+            	Base Web API controller
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Controllers.BaseApiController.Tracer">
+            <summary>
+            	Trace writer
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Controllers.BaseApiController.#ctor">
+            <summary>
+            	Default constructor
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Controllers.CompanyController">
+            <summary>
+              Company Controller
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Controllers.CompanyController.#ctor(Nmma.Business.Services.Contracts.ICompanyService)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="companyService"></param>
+        </member>
+        <member name="M:Api.Nmma.Controllers.CompanyController.Get(System.String)">
+            <summary>
+            Returns company by company ID.
+            </summary>
+            <param name="id">Company ID.</param>
+            <returns>HTTP response containing company instance.</returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.CompanyController.ByUser(System.String)">
+            <summary>
+            Returns list of companies an individual is associated with.
+            </summary>
+            <param name="id">Individual ID.</param>
+            <returns>HTTP response containing a list of companies.</returns>
+        </member>
+        <member name="T:Api.Nmma.Controllers.ExhibitorsController">
+            <summary>
+            Exhibitors API.
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ExhibitorsController.#ctor(Nmma.Business.Services.Contracts.IShowService)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="showService"></param>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ExhibitorsController.ByEditionCompany(System.Int32,System.String)">
+            <summary>
+            Returns list of exhibitors for show edition and company.
+            </summary>
+            <param name="showEditionId">Show edition ID.</param>
+            <param name="companyId">Company ID</param>
+            <returns>HTTP response message containing list of exhibitors.</returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ExhibitorsController.BadgesInfo(System.String,System.String,System.Int32)">
+            added by Ihab Mokbel
+            7/8/15
+            To get all required data for exhibitor badges
+            
+        </member>
+        <member name="M:Api.Nmma.Controllers.ExhibitorsController.ExhibitorEvents(System.String)">
+            Get the exhibiting companies
+        </member>
+        <member name="M:Api.Nmma.Controllers.ExhibitorsController.ExhibitorContacts(System.String,System.Int32)">
+            Get the exhibiting companies
+        </member>
+        <member name="M:Api.Nmma.Controllers.ExhibitorsController.ShowCompanies(System.Int32)">
+            Get the exhibiting companies
+        </member>
+        <member name="M:Api.Nmma.Controllers.ExhibitorsController.SearchByEditionCompany(System.Int32,System.String)">
+            End Ihab Mokbel Modification 7/8/15
+            <summary>
+            Searches for exhibitors by show edition and company name.
+            </summary>
+            <param name="name">Search name key.</param>
+            <returns>HTTP response message containing list of exhibitors.</returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ExhibitorsController.LocalMap(System.Collections.Generic.List{Nmma.Domain.Models.Shows.ExhibitorBadge})">
+            <summary>
+            Added by Ihab Mokbel
+            7/9/15
+            Add and populate a list for exhibitor badges
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.IndividualsController.#ctor(Nmma.Business.Services.Contracts.IIndividualService)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="IndividualService"></param>
+        </member>
+        <member name="T:Api.Nmma.Controllers.ShowEditionsController">
+            <summary>
+            	Show editions controller.
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ShowEditionsController.#ctor(Nmma.Business.Services.Contracts.IShowService)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="showService"></param>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ShowEditionsController.Get">
+            <summary>
+            Returns all current show editions
+            </summary>
+            <returns>HTTP response containing list of shows ordered by show start date.</returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ShowEditionsController.Get(System.Int32)">
+            <summary>
+            Returns show editions by show edition ID.
+            </summary>
+            <param name="id">Edition ID</param>
+            <returns>HTTP response containing single show edition details.</returns>
+        </member>
+        <member name="T:Api.Nmma.Controllers.ShowsController">
+            <summary>
+            	Show controller.
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ShowsController.#ctor(Nmma.Business.Services.Contracts.IShowService)">
+            <summary>
+            	Default constructor
+            </summary>
+            <param name="showService"></param>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ShowsController.Get">
+            <summary>
+            	Returns all NMMA shows.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ShowsController.Get(System.String)">
+            <summary>
+            Returns a NMMA show.
+            </summary>
+            <param name="id">Show ID.</param>
+            <returns>HTTP response message with single show.</returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.ShowsController.GetOPShows(System.Int32)">
+            <summary>
+            Get Operational show based on show year inculde location and address
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.TradeBadgesController.#ctor(Nmma.Business.Services.Contracts.IShowService)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="showService"></param>
+        </member>
+        <member name="T:Api.Nmma.Controllers.UserController">
+            <summary>
+            	User controller
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Controllers.UserController.#ctor(Nmma.Business.Services.Contracts.IAuthentication,Nmma.Business.Services.Contracts.ICompanyService,Nmma.Business.Services.Contracts.IIndividualService)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="authenticationService"></param>
+            <param name="companyService"></param>
+            <param name="individualService"></param>
+        </member>
+        <member name="M:Api.Nmma.Controllers.UserController.Get(System.String)">
+            <summary>
+            Returns a system user.
+            </summary>
+            <param name="id"></param>
+            <returns>A user instance.</returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.UserController.Auth2(System.String,System.String)">
+            <summary>
+            Authenticates a system user.
+            </summary>
+            <param name="email">Email</param>
+            <param name="password">Password</param>
+            <returns>A user instance.</returns>
+        </member>
+        <member name="M:Api.Nmma.Controllers.UserController.GetPassword(System.String)">
+            <summary>
+            API request to return user password by email.
+            </summary>
+            <param name="email">Email address to retrieve password for.</param>
+            <returns>Unencrypted password.</returns>
+        </member>
+        <member name="T:Api.Nmma.Filters.ExceptionHandlingAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Filters.ExceptionHandlingAttribute.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Nmma.WebApiApplication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.WebApiApplication.Application_Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.WebApiApplication.Application_Error">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.MessageHandlers.ClientAuthenticationMessageHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.MessageHandlers.ClientAuthenticationMessageHandler.#ctor(Nmma.Business.Services.Contracts.IWebApiClientService)">
+            <summary>
+            	Default constructor
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Nmma.MessageHandlers.ClientAuthenticationMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Nmma.MessageHandlers.ClientAuthenticationMessageHandler.ClientChecked(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            	Determines whether or not the client is checked.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Nmma.MessageHandlers.ClientAuthenticationMessageHandler.ClientDomainChecked(Nmma.Domain.Models.WebApi.Client,System.Net.Http.HttpRequestMessage)">
+            <summary>
+            	Determines whether or not the client URL is valid.
+            </summary>
+            <param name="client"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Nmma.MessageHandlers.ClientAuthenticationMessageHandler.ClientIPChecked(Nmma.Domain.Models.WebApi.Client,System.Net.Http.HttpRequestMessage)">
+            <summary>
+            	Determines whether or not the client IP is valid.
+            </summary>
+            <param name="client"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Nmma.Models.Address">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Address.Address1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Address.Address2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Address.City">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Address.Country">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Address.PostalCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Address.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Models.Company">
+            <summary>
+            Company
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Company.CompanyId">
+            <summary>
+            Company ID
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Company.Name">
+            <summary>
+            Company name
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Models.OpShow">
+            <summary>
+            opShow
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Models.ShowEdition">
+            <summary>
+            Show edition
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.ShowEdition.ShowEditionId">
+            <summary>
+            Edition ID
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.ShowEdition.ShowEditionCode">
+            <summary>
+            Edition code
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.ShowEdition.ShowId">
+            <summary>
+            Show ID
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.ShowEdition.Name">
+            <summary>
+            Edition name
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.ShowEdition.StartDate">
+            <summary>
+            Edition start date
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.ShowEdition.EndDate">
+            <summary>
+            Edition end date
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Models.Show">
+            <summary>
+            Show
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Show.ShowId">
+            <summary>
+            Show ID.
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.Show.Name">
+            <summary>
+            Show name.
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Models.User">
+            <summary>
+            User (Individual)
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.User.UserId">
+            <summary>
+            Individual ID
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.User.FirstName">
+            <summary>
+            Individual first name
+            </summary>
+        </member>
+        <member name="P:Api.Nmma.Models.User.LastName">
+            <summary>
+            Individual last name
+            </summary>
+        </member>
+        <member name="T:Api.Nmma.Tracing.NLog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Nmma.Tracing.NLog.Trace(System.Net.Http.HttpRequestMessage,System.String,System.Web.Http.Tracing.TraceLevel,System.Action{System.Web.Http.Tracing.TraceRecord})">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="category"></param>
+            <param name="level"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
+            </summary>
+            <param name="description">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The ID as a string.</returns>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.HelpPageConfig">
+            <summary>
+            Use this class to customize the Help Page.
+            For example you can set a custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> to supply the documentation
+            or you can provide the samples for the requests/responses.
+            </summary>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.Controllers.HelpController">
+            <summary>
+            The controller that will handle requests for the help page.
+            </summary>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration,System.Web.Http.Description.IDocumentationProvider)">
+            <summary>
+            Sets the documentation provider for help page.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="documentationProvider">The documentation provider.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleObjects(System.Web.Http.HttpConfiguration,System.Collections.Generic.IDictionary{System.Type,System.Object})">
+            <summary>
+            Sets the objects that will be used by the formatters to produce sample requests/responses.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleObjects">The sample objects.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type and action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample request directly for the specified media type and action with parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type of the action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample response directly for the specified media type of the action with specific parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleForType(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Sets the sample directly for all actions with the specified type and media type.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The parameter type or return type of an action.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action. 
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action. 
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action. 
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action. 
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Gets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <returns>The help page sample generator.</returns>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.SetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration,MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator)">
+            <summary>
+            Sets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleGenerator">The help page sample generator.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageApiModel(System.Web.Http.HttpConfiguration,System.String)">
+            <summary>
+            Gets the model that represents an API displayed on the help page. The model is initialized on the first call and cached for subsequent calls.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="apiDescriptionId">The <see cref="T:System.Web.Http.Description.ApiDescription"/> ID.</param>
+            <returns>
+            An <see cref="T:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel"/>
+            </returns>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel">
+            <summary>
+            The model that represents an API displayed on the help page.
+            </summary>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel"/> class.
+            </summary>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription">
+            <summary>
+            Gets or sets the <see cref="P:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription"/> that describes the API.
+            </summary>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel.SampleRequests">
+            <summary>
+            Gets the sample requests associated with the API.
+            </summary>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel.SampleResponses">
+            <summary>
+            Gets the sample responses associated with the API.
+            </summary>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.Models.HelpPageApiModel.ErrorMessages">
+            <summary>
+            Gets the error messages associated with this model.
+            </summary>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator">
+            <summary>
+            This class will generate the samples for the help page.
+            </summary>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator"/> class.
+            </summary>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes">
+            <summary>
+            Gets CLR types that are used as the content of <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/>.
+            </summary>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples">
+            <summary>
+            Gets the objects that are used directly as samples for certain actions.
+            </summary>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects">
+            <summary>
+            Gets the objects that are serialized as samples by the supported formatters.
+            </summary>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the request body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.GetSampleResponses(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the response body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.GetSample(System.Web.Http.Description.ApiDescription,MvcApplication1.Areas.HelpPage.SampleDirection)">
+            <summary>
+            Gets the request or response body samples.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.GetActionSample(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Type,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,MvcApplication1.Areas.HelpPage.SampleDirection)">
+            <summary>
+            Search for samples that are provided directly through <see cref="P:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples"/>.
+            </summary>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="type">The CLR type.</param>
+            <param name="formatter">The formatter.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The sample that matches the parameters.</returns>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.GetSampleObject(System.Type)">
+            <summary>
+            Gets the sample object that will be serialized by the formatters. 
+            First, it will look at the <see cref="P:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects"/>. If no sample object is found, it will try to create one using <see cref="T:MvcApplication1.Areas.HelpPage.ObjectGenerator"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The sample object.</returns>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.ResolveType(System.Web.Http.Description.ApiDescription,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},MvcApplication1.Areas.HelpPage.SampleDirection,System.Collections.ObjectModel.Collection{System.Net.Http.Formatting.MediaTypeFormatter}@)">
+            <summary>
+            Resolves the type of the action parameter or return value when <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/> is used.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or a response.</param>
+            <param name="formatters">The formatters.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleGenerator.WriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter,System.Object,System.Type,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Writes the sample object using formatter.
+            </summary>
+            <param name="formatter">The formatter.</param>
+            <param name="value">The value.</param>
+            <param name="type">The type.</param>
+            <param name="mediaType">Type of the media.</param>
+            <returns></returns>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.HelpPageSampleKey">
+            <summary>
+            This is used to identify the place where the sample should be applied.
+            </summary>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Creates a new <see cref="T:MvcApplication1.Areas.HelpPage.HelpPageSampleKey"/> based on media type and CLR type.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The CLR type.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.#ctor(MvcApplication1.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:MvcApplication1.Areas.HelpPage.HelpPageSampleKey"/> based on <see cref="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="sampleDirection">The <see cref="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,MvcApplication1.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:MvcApplication1.Areas.HelpPage.HelpPageSampleKey"/> based on media type, <see cref="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The <see cref="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.ControllerName">
+            <summary>
+            Gets the name of the controller.
+            </summary>
+            <value>
+            The name of the controller.
+            </value>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.ActionName">
+            <summary>
+            Gets the name of the action.
+            </summary>
+            <value>
+            The name of the action.
+            </value>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.MediaType">
+            <summary>
+            Gets the media type.
+            </summary>
+            <value>
+            The media type.
+            </value>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.ParameterNames">
+            <summary>
+            Gets the parameter names.
+            </summary>
+        </member>
+        <member name="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.SampleDirection">
+            <summary>
+            Gets the <see cref="P:MvcApplication1.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.
+            </summary>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.ImageSample">
+            <summary>
+            This represents an image sample on the help page. There's a display template named ImageSample associated with this class.
+            </summary>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.ImageSample.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvcApplication1.Areas.HelpPage.ImageSample"/> class.
+            </summary>
+            <param name="src">The URL of an image.</param>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.InvalidSample">
+            <summary>
+            This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.ObjectGenerator">
+            <summary>
+            This class will create an object of a given type and populate it with sample data.
+            </summary>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)">
+            <summary>
+            Generates an object for a given type. The type needs to be public, have a public default constructor and settable public properties/fields. Currently it supports the following types:
+            Simple types: <see cref="T:System.Int32"/>, <see cref="T:System.String"/>, <see cref="T:System.Enum"/>, <see cref="T:System.DateTime"/>, <see cref="T:System.Uri"/>, etc.
+            Complex types: POCO types.
+            Nullables: <see cref="T:System.Nullable`1"/>.
+            Arrays: arrays of simple types or complex types.
+            Key value pairs: <see cref="T:System.Collections.Generic.KeyValuePair`2"/>
+            Tuples: <see cref="T:System.Tuple`1"/>, <see cref="T:System.Tuple`2"/>, etc
+            Dictionaries: <see cref="T:System.Collections.Generic.IDictionary`2"/> or anything deriving from <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            Collections: <see cref="T:System.Collections.Generic.IList`1"/>, <see cref="T:System.Collections.Generic.IEnumerable`1"/>, <see cref="T:System.Collections.Generic.ICollection`1"/>, <see cref="T:System.Collections.IList"/>, <see cref="T:System.Collections.IEnumerable"/>, <see cref="T:System.Collections.ICollection"/> or anything deriving from <see cref="T:System.Collections.Generic.ICollection`1"/> or <see cref="T:System.Collections.IList"/>.
+            Queryables: <see cref="T:System.Linq.IQueryable"/>, <see cref="T:System.Linq.IQueryable`1"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>An object of the given type.</returns>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.SampleDirection">
+            <summary>
+            Indicates whether the sample is used for request or response
+            </summary>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.TextSample">
+            <summary>
+            This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:MvcApplication1.Areas.HelpPage.XmlDocumentationProvider">
+            <summary>
+            A custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> that reads the API documentation from an XML documentation file.
+            </summary>
+        </member>
+        <member name="M:MvcApplication1.Areas.HelpPage.XmlDocumentationProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvcApplication1.Areas.HelpPage.XmlDocumentationProvider"/> class.
+            </summary>
+            <param name="documentPath">The physical path to XML document.</param>
+        </member>
+    </members>
+</doc>

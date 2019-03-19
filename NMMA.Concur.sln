@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMMA.Concur", "ProjectSource\NMMA.Concur\NMMA.Concur.csproj", "{C67F19E7-28ED-4973-82FF-D132F7BEA560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMMA.OAuth2", "ProjectSource\NMMA.OAuth2\NMMA.OAuth2.csproj", "{44C05AD4-80DE-452D-A364-75C42AE24A8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMMA.Accounting", "ProjectSource\NMMA.Accounting\NMMA.Accounting.csproj", "{FDB209E3-E2B5-42B9-AFBC-F884151EF619}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C67F19E7-28ED-4973-82FF-D132F7BEA560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67F19E7-28ED-4973-82FF-D132F7BEA560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67F19E7-28ED-4973-82FF-D132F7BEA560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67F19E7-28ED-4973-82FF-D132F7BEA560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C05AD4-80DE-452D-A364-75C42AE24A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C05AD4-80DE-452D-A364-75C42AE24A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C05AD4-80DE-452D-A364-75C42AE24A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C05AD4-80DE-452D-A364-75C42AE24A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB209E3-E2B5-42B9-AFBC-F884151EF619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB209E3-E2B5-42B9-AFBC-F884151EF619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB209E3-E2B5-42B9-AFBC-F884151EF619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB209E3-E2B5-42B9-AFBC-F884151EF619}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
